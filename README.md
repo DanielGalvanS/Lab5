@@ -1,12 +1,61 @@
-# React + Vite
+# Lab 5 - React Router con Material UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto demuestra la implementación de un sistema de rutas con React Router, interfaz de usuario con Material UI, y autenticación básica.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ React Router para navegación entre vistas
+- ✅ Material UI para diseño de interfaz
+- ✅ Material Icons para iconografía
+- ✅ Sistema de autenticación con contexto
+- ✅ Vistas: Login, Homepage, Dashboard
+- ✅ Header y Footer en todas las vistas
+- ✅ Rutas protegidas
 
-## Expanding the ESLint configuration
+## Tecnologías Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19.1.1
+- React Router DOM
+- Material UI (@mui/material)
+- Material Icons (@mui/icons-material)
+- Emotion (para estilos de Material UI)
+- Vite (como bundler)
+
+## Instalación
+
+```bash
+npm install
+```
+
+## Ejecución
+
+```bash
+npm run dev
+```
+
+## Credenciales de Prueba
+
+- **Email:** admin@example.com
+- **Contraseña:** password123
+
+## Estructura del Proyecto
+
+```
+src/
+├── components/
+│   ├── Login.jsx          # Componente de inicio de sesión
+│   ├── Homepage.jsx       # Página de inicio
+│   ├── Dashboard.jsx      # Panel de control
+│   └── Layout.jsx         # Layout con Header y Footer
+├── contexts/
+│   └── AuthContext.jsx    # Contexto de autenticación
+└── App.jsx                # Componente principal con rutas
+```
+
+## Funcionalidades
+
+1. **Sistema de Login:** Autenticación con credenciales fijas
+2. **Navegación:** Rutas protegidas que redirigen al login si no está autenticado
+3. **Layout Responsivo:** Header con navegación y Footer en todas las vistas
+4. **Dashboard:** Panel con estadísticas y actividades recientes
+5. **Material UI:** Diseño moderno y consistente
